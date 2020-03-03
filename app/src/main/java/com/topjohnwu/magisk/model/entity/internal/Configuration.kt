@@ -32,9 +32,6 @@ sealed class Configuration : Parcelable {
     object Uninstall : Configuration()
 
     @Parcelize
-    object EnvFix : Configuration()
-
-    @Parcelize
     data class Patch(val fileUri: Uri) : Configuration()
 
 }

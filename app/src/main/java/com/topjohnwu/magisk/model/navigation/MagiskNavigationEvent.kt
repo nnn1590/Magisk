@@ -4,10 +4,7 @@ import android.os.Bundle
 import androidx.annotation.AnimRes
 import androidx.annotation.AnimatorRes
 import androidx.fragment.app.Fragment
-import com.topjohnwu.magisk.core.base.BaseActivity
-import com.topjohnwu.magisk.model.events.ActivityExecutor
 import com.topjohnwu.magisk.model.events.ViewEvent
-import com.topjohnwu.magisk.ui.base.BaseUIActivity
 import kotlin.reflect.KClass
 
 @DslMarker
@@ -17,15 +14,10 @@ class MagiskNavigationEvent(
     val navDirections: MagiskNavDirectionsBuilder,
     val navOptions: MagiskNavOptions,
     val animOptions: MagiskAnimBuilder
-) : ViewEvent(), ActivityExecutor {
+) : ViewEvent() {
 
     companion object {
         operator fun invoke(builder: Builder.() -> Unit) = Builder().apply(builder).build()
-    }
-
-    override fun invoke(activity: BaseActivity) {
-        if (activity !is BaseUIActivity<*, *>) return
-        activity.navigation?.navigateTo(this)
     }
 
     @NavigationDslMarker
