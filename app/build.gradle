@@ -109,13 +109,8 @@ dependencies {
     implementation "se.ansman.kotshi:api:${vKotshi}"
     kapt "se.ansman.kotshi:compiler:${vKotshi}"
 
-    modules {
-        module('androidx.room:room-runtime') {
-            replacedBy('com.github.topjohnwu:room-runtime')
-        }
-    }
     def vRoom = '2.2.4'
-    implementation "com.github.topjohnwu:room-runtime:${vRoom}"
+    implementation "androidx.room:room-runtime:${vRoom}"
     implementation "androidx.room:room-rxjava2:${vRoom}"
     kapt "androidx.room:room-compiler:${vRoom}"
 
