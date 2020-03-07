@@ -5,14 +5,7 @@ import android.content.Context
 import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.multidex.MultiDex
-import androidx.room.Room
 import androidx.work.WorkManager
-import androidx.work.impl.WorkDatabase
-import androidx.work.impl.WorkDatabase_Impl
-import com.topjohnwu.magisk.data.database.RepoDatabase
-import com.topjohnwu.magisk.data.database.RepoDatabase_Impl
-import com.topjohnwu.magisk.data.database.SuLogDatabase
-import com.topjohnwu.magisk.data.database.SuLogDatabase_Impl
 import com.topjohnwu.magisk.di.ActivityTracker
 import com.topjohnwu.magisk.di.koinModules
 import com.topjohnwu.magisk.extensions.get
@@ -38,14 +31,6 @@ open class App() : Application() {
         Shell.Config.addInitializers(RootInit::class.java)
         Shell.Config.setTimeout(2)
         FileProvider.callHandler = SuHandler
-        Room.setFactory {
-            when (it) {
-                WorkDatabase::class.java -> WorkDatabase_Impl()
-                RepoDatabase::class.java -> RepoDatabase_Impl()
-                SuLogDatabase::class.java -> SuLogDatabase_Impl()
-                else -> null
-            }
-        }
     }
 
     override fun attachBaseContext(base: Context) {
