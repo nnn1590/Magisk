@@ -19,6 +19,12 @@ android {
         multiDexEnabled true
         versionName props['appVersion']
         versionCode props['appVersionCode'] as Integer
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = ["room.incremental":"true"]
+            }
+        }
     }
 
     buildTypes {
@@ -109,7 +115,7 @@ dependencies {
     implementation "se.ansman.kotshi:api:${vKotshi}"
     kapt "se.ansman.kotshi:compiler:${vKotshi}"
 
-    def vRoom = '2.2.4'
+    def vRoom = '2.2.2'
     implementation "androidx.room:room-runtime:${vRoom}"
     implementation "androidx.room:room-rxjava2:${vRoom}"
     kapt "androidx.room:room-compiler:${vRoom}"
