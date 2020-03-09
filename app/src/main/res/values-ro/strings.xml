@@ -27,22 +27,22 @@
     <string name="latest_version">Ultima: %1$s</string>
     <string name="uninstall">Dezinstalează</string>
     <string name="uninstall_magisk_title">Dezinstalează Magisk</string>
-    <string name="uninstall_magisk_msg">Toate modulele vor fi dezactivate/eliminate. Rootul va fi eliminat și potențial se vor cripta datele dacă nu sunt criptate deja.</string>
+    <string name="uninstall_magisk_msg">Toate modulele vor fi dezactivate/eliminate!\nRootul va fi eliminat!\nPotențial ți se vor cripta datele dacă nu sunt criptate deja!</string>
     <string name="update">Actualizează</string>
     <string name="core_only_enabled">(Este activat modul numai de bază)</string>
 
     <!--Module Fragment-->
     <string name="no_info_provided">(Nu sunt furnizate informații)</string>
-    <string name="no_modules_found">Niciun modul găsit.</string>
+    <string name="no_modules_found">Niciun modul găsit</string>
     <string name="update_file_created">Modulul va fi actualizat la următoarea repornire.</string>
     <string name="remove_file_created">Modulul va fi eliminat la următoarea repornire.</string>
     <string name="remove_file_deleted">Modulul nu va fi eliminat la următoarea repornire.</string>
     <string name="disable_file_created">Modulul va fi dezactivat la următoarea repornire.</string>
     <string name="disable_file_removed">Modulul va fi activat la următoarea repornire.</string>
     <string name="author">Creat de %1$s</string>
-    <string name="reboot_recovery">Repornește în recovery</string>
-    <string name="reboot_bootloader">Repornește în bootloader</string>
-    <string name="reboot_download">Repornește în download</string>
+    <string name="reboot_recovery">Repornește în modul recovery</string>
+    <string name="reboot_bootloader">Repornește în modul bootloader</string>
+    <string name="reboot_download">Repornește în modul download</string>
     <string name="reboot_edl">Repornește în EDL</string>
 
     <!--Repo Fragment-->
@@ -61,7 +61,7 @@
     <string name="logs_cleared">Jurnal golit cu succes.</string>
 
     <!--About Activity-->
-    <string name="app_changelog">Jurnalul modificărilor</string>
+    <string name="app_changelog">Jurnalul schimbărilor</string>
 
     <!-- System Components, Notifications -->
     <string name="update_channel">Actualizări Magisk</string>
@@ -182,15 +182,15 @@
     <!--Superuser-->
     <string name="su_request_title">Solicitare de superutilizator</string>
     <string name="deny">Refuză</string>
-    <string name="prompt">Solicitare</string>
-    <string name="grant">Permite</string>
-    <string name="su_warning">Permite acces complet la dispozitivul tău.\nRefuză dacă nu ești sigur!</string>
+    <string name="prompt">Solicită</string>
+    <string name="grant">Acordă</string>
+    <string name="su_warning">Acordă acces complet la dispozitivul tău.\nRefuză dacă nu ești sigur!</string>
     <string name="forever">Pentru totdeauna</string>
     <string name="once">O singură dată</string>
-    <string name="tenmin">10 min</string>
-    <string name="twentymin">20 min</string>
-    <string name="thirtymin">30 min</string>
-    <string name="sixtymin">60 min</string>
+    <string name="tenmin">10 minute</string>
+    <string name="twentymin">20 de minute</string>
+    <string name="thirtymin">30 de minute</string>
+    <string name="sixtymin">60 de minute</string>
     <string name="su_allow_toast">Aplicației %1$s i-au fost acordate drepturi de superutilizator</string>
     <string name="su_deny_toast">Aplicației %1$s i-au fost refuzate drepturi de superutilizator</string>
     <string name="no_apps_found">Nicio aplicație găsită</string>
@@ -203,7 +203,7 @@
     <string name="su_revoke_title">Revoci?</string>
     <string name="su_revoke_msg">Confirmi revocarea drepturilor pentru %1$s?</string>
     <string name="toast">Mesaj</string>
-    <string name="none">Nimic</string>
+    <string name="none">Niciuna</string>
 
     <!--Superuser logs-->
     <string name="pid">PID: %1$d</string>
