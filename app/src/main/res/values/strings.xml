@@ -53,7 +53,6 @@
     <string name="not_installed">Not Installed</string>
     <string name="updated_on">Updated on: %1$s</string>
     <string name="sorting_order">Sorting Order</string>
-<<<<<<< HEAD
     <string name="sort_by_name">Sort by name</string>
     <string name="sort_by_update">Sort by last update</string>
 
@@ -75,9 +74,6 @@
     <string name="download_open_self">Show file</string>
     <string name="magisk_update_title">Magisk Update Available!</string>
     <string name="manager_update_title">Magisk Manager Update Available!</string>
-=======
-    <string name="module_permission_declined">Grant storage permission to enable this functionality</string>
->>>>>>> cf54cad3ce7f43a522565de23a27ff90370ab88b
 
     <!-- Installation -->
     <string name="manager_download_install">Press to download and install</string>
